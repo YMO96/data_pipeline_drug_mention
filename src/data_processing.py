@@ -15,7 +15,7 @@ class DataProcessor:
 
         if 'csv' in files[0]:
             df1 = pd.read_csv(path + '/' + files[0],encoding='utf8') #Lire le premier fichier si csv
-            print(df1)
+
         elif 'json' in files[0]:
             df1 = pd.read_json(path + '/' + files[0],convert_dates=False,encoding='utf8') #Lire le premier fichier json
 
