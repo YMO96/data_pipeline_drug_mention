@@ -12,7 +12,7 @@ Un pipeline Data qui sert à importer et ensuite trouver les références entre 
 
 ### Installation
 ```
-python pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Lancement
