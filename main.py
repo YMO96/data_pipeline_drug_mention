@@ -26,7 +26,7 @@ def maxJournal(file):
     most_common_journal=[k for k, v in journals.items() if len(v)==mx]
     print("le nom du journal qui mentionne le plus de médicaments différents :")
     for journal in most_common_journal:
-        print(f"- {journal}，en total {len(journals[journal])} médicaments différfents : {journals[journal]}")
+        print(f"- {journal}，en total {len(journals[journal])} médicaments différents : {journals[journal]}")
 
     # json de médicaments par journal (bonus)
     with open("results/drugs_by_journal.json","w", encoding='utf-8') as f:

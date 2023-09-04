@@ -12,7 +12,12 @@ Un pipeline Data qui sert à importer et ensuite trouver les références entre 
 
 ### Installation
 ```
-python pip install -r /path/to/requirements.txt
+python pip install -r requirements.txt
+```
+
+### Lancement
+```
+python main.py
 ```
 
 ### Traitement ad-hoc
@@ -23,8 +28,8 @@ médicaments différents : focntionnement réalisé par main.maxJournal ;
 exemple :
 ```
 le nom du journal qui mentionne le plus de médicaments différents :
-- Psychopharmacology，en total 2 médicaments différfents : ['TETRACYCLINE', 'ETHANOL']
-- The journal of maternal-fetal & neonatal medicine，en total 2 médicaments différfents : ['ATROPINE', 'BETAMETHASONE']
+- Psychopharmacology，en total 2 médicaments différents : ['TETRACYCLINE', 'ETHANOL']
+- The journal of maternal-fetal & neonatal medicine，en total 2 médicaments différents : ['ATROPINE', 'BETAMETHASONE']
 ```
 ### Pour aller plus loin - le traitement de grands volumes de données 
 Pour les grands volumes de données, ce qui nécessite plus d'attention et d'optimisation pour garantir la performance et l'efficacité du code. Voici quelques facteurs à prendre en compte et les modifications qui peuvent être nécessaires :
