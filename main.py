@@ -7,7 +7,6 @@ def maxJournal(file):
     # Lire des données JSON et les convertir en dictionnaire
     with open(file, 'r') as json_file:
         data = json.load(json_file)
-
     journals={}
     # Traverser des données JSON
     for dictionary in data:
@@ -15,10 +14,8 @@ def maxJournal(file):
             for article in articles:
                 if article['journal'] not in journals.keys():
                     journals[article['journal']]=[drug]
-
-                else:
-                    if drug not in journals[article['journal']]:
-                        journals[article['journal']].append(drug)
+                elif drug not in journals[article['journal']]:
+                    journals[article['journal']].append(drug)
 
     # Trouver le nombre max de médicaments différents
     mx = max(len(journals[x]) for x in journals.keys())
